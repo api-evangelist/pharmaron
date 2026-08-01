@@ -1,8 +1,26 @@
 aid: pharmaron
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pharmaron.png
 name: Pharmaron
-description: 'Pharmaron is a company surfaced as a portfolio company of dcm-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Pharmaron is a life-science contract research, development, and manufacturing
+  organization (CRO/CDMO) providing R&D services across the full drug-discovery and
+  development pipeline for the pharmaceutical and biotechnology industry. Its services
+  span laboratory research, chemistry, biology, drug metabolism and pharmacokinetics,
+  safety assessment, chemistry-manufacturing-and-controls (CMC), and clinical
+  development for small molecules, biologics, and cell and gene therapies. Pharmaron
+  operates globally with facilities in China, the US, and the UK and is publicly
+  listed. It is a B2B partner to drug developers and does not currently publish a
+  public developer portal or API.'
 url: https://raw.githubusercontent.com/api-evangelist/pharmaron/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Enterprise
+- Pharmaceutical
+- Biotechnology
+- Contract Research
+- CRO
+- CDMO
+- Drug Development
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pharmaron-domain-security.yml
+- type: LLMsTxt
+  url: llms/pharmaron-llms.txt
 - type: Website
-  url: http://www.pharmaron.com/
+  url: https://www.pharmaron.com/
+- type: Blog
+  url: https://www.pharmaron.com/about-us/latest-news/
+- type: PrivacyPolicy
+  url: https://www.pharmaron.com/website-privacy-notice/
+- type: Support
+  url: https://www.pharmaron.com/contact-us/
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
